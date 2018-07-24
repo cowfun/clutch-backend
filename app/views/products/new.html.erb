@@ -1,0 +1,8 @@
+<h1> New Product </h1>
+
+<%= simple_form_for @product do |form| %>
+  <%= form.input :code, label: 'Product Barcode' %>
+  <%= form.input :name, label: 'Product Name' %>
+  <%= form.input :price, label: 'Product Price' %>
+  <%= form.submit class: 'btn btn-primary' %>
+<% end %>
